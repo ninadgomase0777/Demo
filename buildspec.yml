@@ -13,7 +13,7 @@ phases:
       - echo Building the Docker image...
       - docker build -t 668853609085.dkr.ecr.us-east-1.amazonaws.com/api-service ./api-gateway
       - docker build -t 668853609085.dkr.ecr.us-east-1.amazonaws.com/chat-service ./chat-service
-      - docker build -t 668853609085.dkr.ecr.us-east-1.amazonaws.com/doctor-patient-common ./doctor-patient-common
+      - docker build -t 668853609085.dkr.ecr.us-east-1.amazonaws.com/doctor-patient-common ./docker-patient-common
       - docker build -t 668853609085.dkr.ecr.us-east-1.amazonaws.com/eureka ./eureka
       - docker build -t 668853609085.dkr.ecr.us-east-1.amazonaws.com/insurance-service ./insurance-service
       - docker build -t 668853609085.dkr.ecr.us-east-1.amazonaws.com/superadmin ./superadmin
