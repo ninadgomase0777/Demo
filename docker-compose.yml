@@ -29,7 +29,7 @@ services:
     mem_limit: 256m
     hostname: insurance-service
     ports:
-      - "8761:8761"
+      - "8081:8081"
   superadmin:
     image: "668853609085.dkr.ecr.us-east-1.amazonaws.com/superadmin"
     mem_limit: 128m
