@@ -17,7 +17,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - docker push 668853609085.dkr.ecr.us-east-1.amazonaws.com/chat-service:latest
+      - docker push 955224149011.dkr.ecr.us-east-1.amazonaws.com/chat:latest
       - echo Writing image definitions file...
       - printf '[{"name":"chat","imageUri":"%s"}]' 955224149011.dkr.ecr.us-east-1.amazonaws.com/chat:latest > imagedefinitions.json
       - cat imagedefinitions.json 
