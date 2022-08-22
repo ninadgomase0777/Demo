@@ -11,7 +11,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t 668853609085.dkr.ecr.us-east-1.amazonaws.com/chat-service ./chat-service
+      - docker build -t 955224149011.dkr.ecr.us-east-1.amazonaws.com/chat ./chat-service
       
   post_build:
     commands:
@@ -19,7 +19,7 @@ phases:
       - echo Pushing the Docker images...
       - docker push 668853609085.dkr.ecr.us-east-1.amazonaws.com/chat-service:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"chat","imageUri":"%s"}]' 668853609085.dkr.ecr.us-east-1.amazonaws.com/chat-service:latest > imagedefinitions.json
+      - printf '[{"name":"chat","imageUri":"%s"}]' 955224149011.dkr.ecr.us-east-1.amazonaws.com/chat:latest > imagedefinitions.json
       - cat imagedefinitions.json 
 artifacts:
     files: imagedefinitions.json
